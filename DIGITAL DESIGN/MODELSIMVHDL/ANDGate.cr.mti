@@ -1,0 +1,38 @@
+C:/Users/ashuk/Documents/ModelSimVHDL/ANDGate.vhd {1 {vcom -work DDVHDL -2002 -explicit C:/Users/ashuk/Documents/ModelSimVHDL/ANDGate.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity and_ent
+-- Compiling architecture and_arch of and_ent
+
+} {} {}} C:/Users/ashuk/Documents/ModelSimVHDL/AsyncCounter.vhd {2 {vcom -work work -2002 -explicit C:/Users/ashuk/Documents/ModelSimVHDL/AsyncCounter.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity counter
+-- Compiling architecture counter_arch of counter
+** Warning: C:/Users/ashuk/Documents/ModelSimVHDL/AsyncCounter.vhd(11): (vcom-1236) Shared variables must be of a protected type.
+
+} {} {}} C:/Users/ashuk/Documents/ModelSimVHDL/ORGate.vhd {1 {vcom -work DDVHDL -2002 -explicit C:/Users/ashuk/Documents/ModelSimVHDL/ORGate.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity or_ent
+-- Compiling architecture or_arch of or_ent
+
+} {} {}} C:/Users/ashuk/Documents/ModelSimVHDL/NOTGate.vhd {1 {vcom -work DDVHDL -2002 -explicit C:/Users/ashuk/Documents/ModelSimVHDL/NOTGate.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity not_ent
+-- Compiling architecture not_arch of not_ent
+
+} {} {}} C:/Users/ashuk/Documents/ModelSimVHDL/AsyncUpCounter.vhd {2 {vcom -work work -2002 -explicit C:/Users/ashuk/Documents/ModelSimVHDL/AsyncUpCounter.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity up_counter
+-- Compiling architecture up_counter_arch of up_counter
+** Warning: C:/Users/ashuk/Documents/ModelSimVHDL/AsyncUpCounter.vhd(11): (vcom-1236) Shared variables must be of a protected type.
+
+} {} {}}

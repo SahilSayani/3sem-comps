@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity AND_ent is
+  port ( x : in std_logic;
+  y : in std_logic;
+  f : out std_logic);
+end AND_ent;
+
+architecture AND_arch of AND_ent is
+begin
+  process (x,y)
+  begin
+    if ((x = '1') and (y = '1')) then
+      f <= '1';
+    else
+      f <= '0';
+    end if;
+  end process;
+end AND_arch;

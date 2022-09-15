@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity XOR_ent is
+  port ( x : in std_logic;
+  y : in std_logic;
+  f : out std_logic);
+end XOR_ent;
+
+architecture XOR_arch of XOR_ent is
+begin
+  process (x, y)
+  begin
+    if (x == y) then
+      f <= '0';
+    else
+      f <= '1';
+    end if;
+  end process;
+end XOR_arch;

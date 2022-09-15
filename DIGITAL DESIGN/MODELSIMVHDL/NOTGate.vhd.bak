@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity NOT_ent is
+  port ( x : in std_logic;
+  f : out std_logic);
+end NOT_ent;
+
+architecture NOT_arch of NOT_ent is
+begin
+  process (x)
+  begin
+    if ((x = '1')) then
+      f <= '0';
+    else
+      f <= '1';
+    end if;
+  end process;
+end NOT_arch;
+

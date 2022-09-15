@@ -1,0 +1,39 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity up_counter is
+port ( CLK : in std_logic; -- Clock input CLK active low
+T : in std_logic; -- Asynchronous clear input CLR active high
+Q: out std_logic_vector(2 downto 0));
+end up_counter;
+
+architecture up_counter_arch of up_counter is
+  shared variable tmp: std_logic_vector(2 downto 0):=(others=>'0');
+  signal tmp_out: std_logic_vector(2 downto 0):=(others=>'0');
+begin
+  process(CLK) is
+  begin
+    if(rising_edge(clk)) and (T='1') then
+      tmp(0):=not tmp(0);
+      tmp_out(0)<=tmp(0);
+  end if;
+end process;
+
+process(tmp_out(0)) is
+begin
+  if(falling_edge(tmp_out(0)) and (T='1')) then
+      tmp(1):=not tmp(1);
+      tmp_out(1)<=tmp(1);
+  end if;
+end process;
+
+process(tmp_out(1)) is
+begin
+  if(falling_edge(tmp_out(1)) and (T='1')) then
+      tmp(2):=not tmp(2);
+      tmp_out(2)<=tmp(2);
+  end if;
+end process;
+
+Q<=tmp_out;
+end up_counter_arch;

@@ -1,0 +1,63 @@
+Data Structures Lab Dump
+
+write a program which accepts 2 polynomials from the user and calculates the sum and difference of the polynomials using Linked Lists
+- not a menu driven program
+- structure of the node can be anything according to you
+
+Queue Using Linked List error list
+
+
+QueueLinkedList.cpp: In function 'int main(int, const char**)':
+QueueLinkedList.cpp:89:40: error: 'QueueLinkedList::Node** QueueLinkedList::create()' is private within this context
+     struct Node **nodes = queue.create();
+                                        ^
+come back later: commented create()
+
+QueueLinkedList.cpp:29:19: note: declared private here
+     struct Node **create()
+                   ^~~~~~
+added public before all functions
+
+QueueLinkedList.cpp:89:40: error: cannot convert 'QueueLinkedList::Node**' to 'main(int, const char**)::Node**' in initialization
+     struct Node **nodes = queue.create();
+                                        ^
+come back later: commented the line
+
+QueueLinkedList.cpp:111:38: error: no matching function for call to 'QueueLinkedList::addNode(main(int, const char**)::Node*&, int&)'
+             queue.addNode(start, data);
+                                      ^
+
+
+QueueLinkedList.cpp:38:10: note: candidate: 'void QueueLinkedList::addNode(QueueLinkedList::Node*, int)'
+     void addNode(struct Node *start, int data)
+          ^~~~~~~
+QueueLinkedList.cpp:38:10: note:   no known conversion for argument 1 from 'main(int, const char**)::Node*' to 'QueueLinkedList::Node*'
+QueueLinkedList.cpp:112:32: error: no matching function for call to 'QueueLinkedList::display(main(int, const char**)::Node*&)'
+             queue.display(start);
+                                ^
+QueueLinkedList.cpp:73:10: note: candidate: 'void QueueLinkedList::display(QueueLinkedList::Node*)'
+     void display(struct Node *start)
+          ^~~~~~~
+QueueLinkedList.cpp:73:10: note:   no known conversion for argument 1 from 'main(int, const char**)::Node*' to 'QueueLinkedList::Node*'
+QueueLinkedList.cpp:116:35: error: no matching function for call to 'QueueLinkedList::deleteNode(main(int, const char**)::Node**&)'
+             queue.deleteNode(nodes);
+                                   ^
+QueueLinkedList.cpp:50:9: note: candidate: 'int QueueLinkedList::deleteNode(QueueLinkedList::Node**)'
+     int deleteNode(struct Node **nodes)
+         ^~~~~~~~~~
+QueueLinkedList.cpp:50:9: note:   no known conversion for argument 1 from 
+'main(int, const char**)::Node**' to 'QueueLinkedList::Node**'
+QueueLinkedList.cpp:117:32: error: no matching function for call to 'QueueLinkedList::display(main(int, const char**)::Node*&)'
+             queue.display(start);
+                                ^
+QueueLinkedList.cpp:73:10: note: candidate: 'void QueueLinkedList::display(QueueLinkedList::Node*)'
+     void display(struct Node *start)
+          ^~~~~~~
+QueueLinkedList.cpp:73:10: note:   no known conversion for argument 1 from 'main(int, const char**)::Node*' to 'QueueLinkedList::Node*'
+QueueLinkedList.cpp:121:32: error: no matching function for call to 'QueueLinkedList::display(main(int, const char**)::Node*&)'
+             queue.display(start);
+                                ^
+QueueLinkedList.cpp:73:10: note: candidate: 'void QueueLinkedList::display(QueueLinkedList::Node*)'
+     void display(struct Node *start)
+          ^~~~~~~
+QueueLinkedList.cpp:73:10: note:   no known conversion for argument 1 from 'main(int, const char**)::Node*' to 'QueueLinkedList::Node*'

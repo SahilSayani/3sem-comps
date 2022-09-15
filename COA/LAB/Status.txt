@@ -1,0 +1,18 @@
+Experiment 1: PCI and SCSI bus - Not code related
+Experiment 2: Booth's Algorithm code implementation
+Experiment 3: Restoring Division Algorithm code implementation
+Experiment 4: Non-Restoring Division Algorithm code implementation
+Experiment 5: IEEE-754 representation code implementation
+Experiment 6: LRU Page Replacement Code implementation
+Experiment 7: FIFO Page Replacement Code implementation
+Experiment 8: Cache Mapping Code implementation.
+Experiment 9: Understanding RISC and CISC Architecture - Not code related
+Experiment 10: Virtual Lab shiz - Not Code related
+
+Exp 2 - BoothAlgo.java - Done
+Exp 3 - RestoringDiv.java - Done
+Exp 4 - NonRestoringDiv.java - Done
+Exp 5 - IEEEConverion.java - Not done single precision
+Exp 6 - LRUCache.java - Done 
+Exp 7 - FIFOCache2.java - Done
+Exp 8 - - haha not even started what a loser
